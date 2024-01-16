@@ -9,7 +9,7 @@ import os
 
 abs_path = os.getcwd()
 all_heroes = [
-    {"name": "Kamala Khan", "super_name": "Ms. Marvel"},
+    {"name": "Kamala Khan", "super_name": "Ms. Marvel 🦸‍♀️"},
     {"name": "Doreen Green", "super_name": "Squirrel Girl"},
     {"name": "Gwen Stacy", "super_name": "Spider-Gwen"},
     {"name": "Janet Van Dyne", "super_name": "The Wasp"},
