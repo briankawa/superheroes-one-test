@@ -17,4 +17,4 @@ def see_heroes():
         db.session.commit()
     
     
-# see_heroes()
+        see_heroes()
