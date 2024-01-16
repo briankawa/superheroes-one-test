@@ -6,7 +6,6 @@ from flask_migrate import Migrate
 from models import db, Hero
 import os
 abs_path = os.getcwd()
-abs_python_path = os.path.normpath(abs_path)
 
 db_path = f'{abs_path}/db/heroes.db'
 app = Flask(__name__)
