@@ -4,9 +4,12 @@ from flask import Flask, make_response
 from flask_migrate import Migrate
 
 from models import db, Hero
+import os
+abs_path = os.getcwd()
 
+db_path = f'{abs_path}/db/heroes.db'
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db/app.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 migrate = Migrate(app, db)
